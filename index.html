@@ -1,64 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
- <link rel="stylesheet"  type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
+
 <body>
-    
- 
-<div class="main_container">
-    <div class="lk_container">
-        <div class="lk_container__main">
-            <div class="lk_container__main-title">
-                Личный кабинет
+
+
+    <div class="main_container">
+        <div class="lk_container">
+            <div class="lk_container__main">
+                <div class="lk_container__main-title">
+                    Личный кабинет
+                </div>
+                <div class="lk_container__main-main">
+                    <div class="lk_container__main-img">
+                        <img src="https://devtest.1med.tv/local/templates/NEW_2019/images/medcat5.webp">
+                    </div>
+                    <div class="lk_container__main-fio">
+                        <p>Морозова</p>
+                        <p>Алина Сергеевна</p>
+                    </div>
+                    <div class="lk_container__main-mail">
+                        <img src="https://devtest.1med.tv/local/templates/NEW_2019/svg/envelope.svg">
+
+                        <div class="lk_container__main-mail-text">
+                            morozova.freelance@yandex.ru
+                        </div>
+                    </div>
+                    <!-- телефон верифицирован                
+                <div class="lk_container__main-phone">
+                   <img src="https://devtest.1med.tv/local/templates/NEW_2019/svg/phone.svg">
+                   
+                   <div class="lk_container__main-phone-text">
+                       +7 (985) 186-33-76
+                    </div>
+                </div>  
+                 /телефон верифицирован -->
+                    <!-- телефон не верифицирован -->
+                    <div class="lk_container__main-phone">
+                        <img src="https://devtest.1med.tv/local/templates/NEW_2019/svg/phone.svg">
+
+                        <div class="lk_container__main-phone-input">
+                            <input type="text" phone_ajax="tv" id="phone" name="PERSONAL_PHONE"
+                                class="mask_phone_cabinet" placeholder="Добавьте телефон*" value="" autocomplete="off"
+                                wfd-id="id11">
+                        </div>
+                        <button class="lk_container__main-phone-button" disabled="disabled">
+                            <span class="lk_container__main-phone-button-span">
+                                Сохранить
+                            </span>
+                        </button>
+                    </div>
+                    <div class="lk_container__main-phone-bottom">
+                        * Только для телефонов из России. Мы сохраняем в Вашем профиле номер телефона только если Вы его
+                        подтвердите. Для подтверждения номера введите последние 4 цифры номера с которого на Ваш телефон
+                        поступит звонок.
+                    </div>
+                    <!-- /телефон не верифицирован -->
+                    <button class="lk_container__main-button">
+                        <span class="lk_container__main-button-span">
+                            Выйти
+                        </span>
+                    </button>
+                </div>
+
             </div>
-            <div class="lk_container__main-main">                
-                <div class="lk_container__main-img">
-                    <img src="https://devtest.1med.tv/local/templates/NEW_2019/images/medcat5.webp">
-                </div>            
-                <div class="lk_container__main-fio">
-                   <p>Морозова</p>
-                   <p>Алина Сергеевна</p>
+            <div class="lk_container__socnet">
+                <div class="lk_container__socnet-title">
+                    Социальные сети
+                </div>
+                <div class="lk_container__socnet-main">
+                    222
                 </div>
             </div>
-            
-        </div>
-        <div class="lk_container__socnet">            
-            <div class="lk_container__socnet-title">
-                Социальные сети
+            <div class="lk_container__profile">
+                <div class="lk_container__profile-title">
+                    Мои данные
+                </div>
+                <div class="lk_container__profile-main">
+                    333<br>111
+                </div>
             </div>
-            <div class="lk_container__socnet-main">
-                222
+            <div class="lk_container__pass">
+                <div class="lk_container__pass-title">
+                    Изменить пароль
+                </div>
+                <div class="lk_container__pass-main">
+                    4
+                </div>
             </div>
-        </div>
-        <div class="lk_container__profile">            
-            <div class="lk_container__profile-title">
-               Мои данные
-            </div>
-            <div class="lk_container__profile-main">
-                333<br>111
-            </div>
-        </div>
-        <div class="lk_container__pass">
-             <div class="lk_container__pass-title">
-               Изменить пароль
-            </div>
-            <div class="lk_container__pass-main">
-                4
-            </div>
-        </div>
-        <div class="lk_container__timezone">
-             <div class="lk_container__timezone-title">
-               Часовой пояс
-            </div>
-            <div class="lk_container__timezone-main">
-                5
+            <div class="lk_container__timezone">
+                <div class="lk_container__timezone-title">
+                    Часовой пояс
+                </div>
+                <div class="lk_container__timezone-main">
+                    5
+                </div>
             </div>
         </div>
     </div>
-</div>
 </body>
+
 </html>
