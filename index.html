@@ -13,57 +13,57 @@
 
     <div class="main_container">
         <div class="lk_container">
-            <div class="lk_container__main">
-                <div class="lk_container__main-title">
+            <div class="lk__main">
+                <div class="lk__main-title">
                     Личный кабинет
                 </div>
-                <div class="lk_container__main-main">
-                    <div class="lk_container__main-img">
+                <div class="lk__main-main">
+                    <div class="lk__main-img">
                         <img src="https://devtest.1med.tv/local/templates/NEW_2019/images/medcat5.webp">
                     </div>
-                    <div class="lk_container__main-fio">
+                    <div class="lk__main-fio">
                         <p>Морозова</p>
                         <p>Алина Сергеевна</p>
                     </div>
-                    <div class="lk_container__main-mail">
+                    <div class="lk__main-mail">
                         <img src="https://devtest.1med.tv/local/templates/NEW_2019/svg/envelope.svg">
 
-                        <div class="lk_container__main-mail-text">
+                        <div class="lk__main-mail-text">
                             morozova.freelance@yandex.ru
                         </div>
                     </div>
-                    <!-- телефон верифицирован                
-                <div class="lk_container__main-phone">
+                    <!-- телефон верифицирован     -->            
+                <div class="lk__main-phone">
                    <img src="https://devtest.1med.tv/local/templates/NEW_2019/svg/phone.svg">
                    
-                   <div class="lk_container__main-phone-text">
+                   <div class="lk__main-phone-text">
                        +7 (985) 186-33-76
                     </div>
                 </div>  
-                 /телефон верифицирован -->
-                    <!-- телефон не верифицирован -->
-                    <div class="lk_container__main-phone">
+                 <!-- /телефон верифицирован -->
+                    <!-- телефон не верифицирован 
+                    <div class="lk__main-phone">
                         <img src="https://devtest.1med.tv/local/templates/NEW_2019/svg/phone.svg">
 
-                        <div class="lk_container__main-phone-input">
+                        <div class="lk__main-phone-input">
                             <input type="text" phone_ajax="tv" id="phone" name="PERSONAL_PHONE"
                                 class="mask_phone_cabinet" placeholder="Добавьте телефон*" value="" autocomplete="off"
                                 wfd-id="id11">
                         </div>
-                        <button class="lk_container__main-phone-button" disabled="disabled">
-                            <span class="lk_container__main-phone-button-span">
+                        <button class="lk__main-phone-button" disabled="disabled">
+                            <span class="lk__main-phone-button-span">
                                 Сохранить
                             </span>
                         </button>
                     </div>
-                    <div class="lk_container__main-phone-bottom">
+                    <div class="lk__main-phone-bottom">
                         * Только для телефонов из России. Мы сохраняем в Вашем профиле номер телефона только если Вы его
                         подтвердите. Для подтверждения номера введите последние 4 цифры номера с которого на Ваш телефон
                         поступит звонок.
                     </div>
-                    <!-- /телефон не верифицирован -->
-                    <button class="lk_container__main-button">
-                        <span class="lk_container__main-button-span">
+                     /телефон не верифицирован -->
+                    <button class="lk__main-button">
+                        <span class="lk__main-button-span">
                             Выйти
                         </span>
                     </button>
@@ -71,34 +71,176 @@
 
             </div>
             <div class="lk_container__socnet">
-                <div class="lk_container__socnet-title">
+                <div class="lk__socnet-title">
                     Социальные сети
                 </div>
-                <div class="lk_container__socnet-main">
+                <div class="lk__socnet-main">
                     222
                 </div>
             </div>
             <div class="lk_container__profile">
-                <div class="lk_container__profile-title">
+                <div class="lk__profile-title">
                     Мои данные
                 </div>
-                <div class="lk_container__profile-main">
-                    333<br>111
+                <div class="lk__profile-main">
+                    <div class="lk__profile-alert">
+                        <img src="https://devtest.1med.tv/local/templates/NEW_2019/images/alert.png">
+
+                        <div class="lk__profile-alert-text">
+                            Чтобы получить доступ ко&nbsp;всем материалам сайта, пожалуйста, заполните все обязательные
+                            поля
+                        </div>
+                    </div>
+                    <div class="lk__profile-center">
+                        <div class="lk__profile-left">
+                            <div class="lk__profile-left-container">
+                                <div class="lk__profile-surname lk__profile-block">
+                                    <div class="lk_bage">
+                                        Фамилия
+                                    </div>
+                                    <input class="lk__input" value="Морозова">
+                                </div>
+
+                                <div class="lk__profile-name lk__profile-block">
+                                    <div class="lk_bage">
+                                        Имя
+                                    </div>
+                                    <input class="lk__input" value="Алина">
+                                </div>
+
+                                <div class="lk__profile-fathername lk__profile-block">
+                                    <div class="lk_bage">
+                                        Отчество
+                                    </div>
+                                    <input class="lk__input" value="Сергеевна">
+                                    <div class="lk_inputinfo lk_inputinfo-grey">
+                                        необязательно
+                                    </div>
+                                    <!--
+                                        <div class="lk_inputinfo lk_inputinfo-red">
+                                            обязательно к заполнению
+                                        </div>
+                                        -->
+                                </div>
+                                <div class="lk__profile-address lk__profile-block">
+                                    <div class="lk_bage">
+                                        Адрес
+                                    </div>
+                                    <input class="lk__input" value="Россия, г. Москва, Москва">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lk__profile-right">
+                            <div class="lk__profile-right-container">
+
+                                <div class="lk__profile-specradio">
+                                    <label class="lk__radio">
+                                        <input class="lk__radio-input" type="radio" name="specradio">
+                                        <div class="lk__radio-new" aria-hidden="true">
+                                            <div class="lk__radio-new_checked">
+                                                <span>✔</span>
+                                            </div>
+                                            <div class="lk__radio-new_unchecked">
+                                            </div>
+                                        </div>
+                                        <span class="lk__radio-label">Врач</span>
+                                    </label>
+
+                                    <label class="lk__radio">
+                                        <input class="lk__radio-input" type="radio" name="specradio" checked="">
+                                        <div class="lk__radio-new" aria-hidden="true">
+                                            <div class="lk__radio-new_checked">
+                                                <span>✔</span>
+                                            </div>
+                                            <div class="lk__radio-new_unchecked">
+                                            </div>
+                                        </div>
+                                        <span class="lk__radio-label">Средний медперсонал</span>
+                                    </label>
+                                </div>
+
+                                <div class="lk__profile-block lk__profile-spec">
+                                    <div class="lk_bage">
+                                        Специальность
+                                    </div>  
+                                    <label class="lk__input-spec" for="job">
+                                        <input class="red" type="text" readonly="" required="" id="job" name="SPEC_LIST" value="" placeholder="Выберите специальность" autocomplete="off" >
+                                        <div class="lk__input-spec-ul">
+                                            
+                                        </div>
+                                    </label>
+                                    <label for="uf_spec_else" style="display:none">
+                                        <input onkeypress="noDigits(event)" type="text" id="uf_spec_else" name="UF_SPEC" placeholder="Введите специальность" value="" >
+                                    </label>
+                                </div>
+
+                                <label class="lk__profile-block lk__checkbox">
+                                    <input class="lk__checkbox-input" type="checkbox">
+
+                                    <div class="lk__checkbox-new" aria-hidden="true">
+                                        <div class="lk__checkbox-new_checked">
+                                            <span>✔</span>
+                                        </div>
+                                        <div class="lk__checkbox-new_unchecked">
+                                        </div>
+                                    </div>
+
+                                    <span class="lk__checkbox-label">детский</span>
+                                </label>
+
+                                <div class="lk__profile-dolzhnost lk__profile-block">
+                                    <div class="lk_bage">
+                                        Должность
+                                    </div>
+                                    <input class="lk__input" value="" style="background-color: #feeae9 !important; border: 1.5px solid #ee404c;">
+                                    <div class="lk_inputinfo lk_inputinfo-red">
+                                        обязательно к заполнению
+                                    </div>                                        
+                                </div>
+
+                                <div class="lk__profile-mestoraboty lk__profile-block">
+                                    <div class="lk_bage">
+                                        Место работы
+                                    </div>
+                                    <input class="lk__input" value="" style="background-color: #feeae9 !important; border: 1.5px solid #ee404c;">
+                                    <div class="lk_inputinfo lk_inputinfo-red">
+                                        обязательно к заполнению
+                                    </div>                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lk__profile-button-block">
+
+                        <button class="lk__profile-button">
+                            <span class="lk__profile-button-span">
+                                Сохранить
+                            </span>
+                        </button>
+                        <button class="lk__profile-decline">                            
+                                отменить
+                        </button>
+                    </div>
+
+
+
+
+
                 </div>
             </div>
             <div class="lk_container__pass">
-                <div class="lk_container__pass-title">
+                <div class="lk__pass-title">
                     Изменить пароль
                 </div>
-                <div class="lk_container__pass-main">
+                <div class="lk__pass-main">
                     4
                 </div>
             </div>
             <div class="lk_container__timezone">
-                <div class="lk_container__timezone-title">
+                <div class="lk__timezone-title">
                     Часовой пояс
                 </div>
-                <div class="lk_container__timezone-main">
+                <div class="lk__timezone-main">
                     5
                 </div>
             </div>
