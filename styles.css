@@ -169,7 +169,7 @@ input[type=text]:-webkit-autofill:active {
 }
 
 .lk__profile-block {
-    padding: 0px 0 30px 0;
+    padding: 0px 0 20px 0;
 }
 
 .lk__pass-block,
@@ -296,6 +296,7 @@ input[type=text]:-webkit-autofill:active {
 .lk__main-img img {
     width: 168px;
     height: 147px;
+    text-align: center;
 }
 
 .lk__main-fio {
@@ -464,7 +465,7 @@ input[type=text]:-webkit-autofill:active {
 }
 
 .lk__main-phone-bottom {
-    padding: 18px 0 50px 0;
+    padding: 18px 0 0px 0;
     font-size: 14px;
     color: #000;
     opacity: 0.5;
@@ -505,6 +506,7 @@ input[type=text]:-webkit-autofill:active {
 .lk__profile-left {
     width: calc(45% - 10px);
     border-right: 1.5px solid #DCDCDC;
+    padding: 2px 0 0px 0px;
 }
 
 .lk__profile-right {
@@ -521,19 +523,18 @@ input[type=text]:-webkit-autofill:active {
 }
 
 .lk__profile-spec {
-    padding: 0 0 10px 0;
+    padding: 0 0 15px 0;
 }
 
 .lk__profile-specradio {
     display: flex;
     gap: 20px;
     justify-content: space-between;
-    padding: 0 0 30px 0;
+    padding: 37px 0 30px 0;
 }
 
 .lk__profile-dolzhnost {
-    border-top: 1.5px solid #DCDCDC;
-    padding: 20px 0 30px 0;
+    padding: 6px 0 20px 0;
 }
 
 .lk__profile-button-block {
@@ -555,7 +556,7 @@ input[type=text]:-webkit-autofill:active {
     display: block;
     text-align: center;
     padding: 10px 0;
-    margin-top: 30px;
+    margin-top: 47px;
     color: #ffffff;
 }
 
@@ -598,7 +599,7 @@ input[type=text]:-webkit-autofill:active {
     transition: all 0.3s ease;
     display: block;
     padding: 10px 0;
-    margin-top: 30px;
+    margin-top: 47px;
     color: #3b7abc;
     opacity: 0.5;
     background-color: #fff;
@@ -873,18 +874,148 @@ input[type=text]:-webkit-autofill:active {
     }
 }
 
-@media (max-width:1050px) { 
+@media (max-width:1050px) {
     .main_container {
         margin: 50px;
     }
 }
-@media (max-width:850px) { 
+
+@media (max-width:850px) {
     .main_container {
         margin: 30px;
     }
+
+    .lk__main-phone-input {
+        width: 135px;
+    }
 }
-@media (max-width:750px) { 
+
+@media (max-width:750px) {
+    .lk__main-main {
+        min-height: auto;
+    }
+
     .main_container {
         margin: 20px;
     }
+
+    .lk_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lk__profile-center {
+        flex-direction: column;
+    }
+
+    .lk__profile-left {
+        width: 100%;
+        border-right: 0;
+        border-bottom: 1.5px solid #DCDCDC;
+        padding: 2px 0 20px 0px;
+    }
+
+    .lk__profile-right {
+        width: 100%;
+    }
+
+    .lk__profile-left-container,
+    .lk__profile-right-container {
+        width: 100%;
+    }
+
+    .lk__profile-specradio {
+        padding: 20px 0 30px 0;
+    }
+
+    .lk__profile-main {
+        padding: 20px 0;
+    }
 }
+
+@media (max-width:450px) {
+
+    .lk__main-main,
+    .lk__pass-main,
+    .lk__socnet-main,
+    .lk__timezone-main {
+        padding: 20px 25px;
+    }
+
+    .lk__input {
+        width: calc(100% - 33px);
+    }
+
+    .lk__main-mail,
+    .lk__main-phone,
+    .lk__main-phone-bottom {
+        width: 100%;
+    }
+}
+
+@media (max-width:400px) {
+
+    .lk__main-button {
+        width: 100%;
+    }
+
+    .lk__main-phone-input {
+        width: 120px;
+    }
+
+    .lk__profile-alert img {
+        display: none;
+    }
+
+    .lk__profile-alert-text {
+        padding: 0 0 0 10px;
+    }
+
+    .lk__profile-specradio {
+        flex-direction: column;
+    }
+
+    .lk__socnet-icon-img {
+        width: 50px;
+    }
+
+    .lk__profile-button,
+    .lk__pass-button {
+        width: 100%;
+    }
+
+    .lk__profile-button-block {
+        flex-direction: column;
+        margin: 0 25px;
+        gap: 10px;
+    }
+
+    .lk__profile-decline {
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .lk__pass-button-block {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .lk__pass-decline {
+        margin-top: 0;
+        padding: 0;
+    }
+
+}
+
+@media (max-width:325px) {
+    .lk__main-mail img, .lk__main-phone img {
+        display: none;
+}
+.lk__main-phone {
+    flex-direction: column;
+}
+    .lk__main-phone-input {
+        width: 100%;
+    }
+
+    }
