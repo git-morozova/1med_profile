@@ -750,7 +750,7 @@ input[type=text]:-webkit-autofill:active {
     outline: 0;
     display: block;
        width: 50px;
-    height: 25px;
+    height: 28px;
     position: relative;
     cursor: pointer;
     user-select: none;
@@ -781,15 +781,15 @@ input[type=text]:-webkit-autofill:active {
     background: #EDF1F4;
     border-radius: 2em;
     padding: 2px;
-    transition: all 0.4s ease;
+    transition: all 0.1s ease;
     border: #DCDCDC 2px solid;
 }
 
 .lk__socnet-tgl+.lk__socnet-tgl-btn:after {
     border-radius: 2em;
     background: #fff;
-    transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 0 rgba(0, 0, 0, 0.08);
+    transition: left 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.1s ease, margin 0.1s ease;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 0 rgba(0, 0, 0, 0.08);
 }
 
 .lk__socnet-tgl+.lk__socnet-tgl-btn:hover:after {
@@ -801,7 +801,7 @@ input[type=text]:-webkit-autofill:active {
 }
 
 .lk__socnet-tgl+.lk__socnet-tgl-btn:active:after {
-    padding-right: 0.8em;
+    padding-right: 10px;
 }
 
 .lk__socnet-tgl:checked+.lk__socnet-tgl-btn {
