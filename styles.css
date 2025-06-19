@@ -1169,95 +1169,108 @@ input[type=text]:-webkit-autofill:active {
 
 /* mobile tabs */
 .lk__accordion-input {
-	display: none;
+    display: none;
 }
+
 @media (max-width:750px) {
-.lk__main-main, .lk__socnet-main, .lk__profile-main, .lk__pass-main, .lk__timezone-main {
-    border: #DCDCDC 0px solid;
-}
-.lk__box {
-	position: relative;
-	background: white;
-    height: 64px;
-    transition: all .15s ease-in-out;
-}
-.lk__box::before {
-    content: '';
-    position: absolute;
-    display: block;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    pointer-events: none;
-    box-shadow: 0 1px 0 #e5e5e5, 0 0 3px rgba(0, 0, 0, .12), 0 0px 2px rgba(0, 0, 0, .24);
+    .lk__main-main,
+    .lk__socnet-main,
+    .lk__profile-main,
+    .lk__pass-main,
+    .lk__timezone-main {
+        border: #DCDCDC 0px solid;
+    }
 
-}
-.lk__box-title {
-	width: calc(100% - 40px);
-	height: 64px;
-	line-height: 64px;
-	padding: 0 20px;
-	display: inline-block;
-	cursor: pointer;
-	-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;
-}
-.lk__box-content {
-	display: none;
-}
-.lk__pass-main, .lk__timezone-main {
-    width: calc(85%);
+    .lk__box {
+        position: relative;
+        background: white;
+        height: 64px;
+        transition: all .15s ease-in-out;
+    }
 
-}
-.lk__box-close {
-	position: absolute;
-	height: 64px;
-	width: 100%;
-	top: 0;
-	left: 0;
-	cursor: pointer;
-	display: none;
-}
-input:checked + .lk__box {
-	height: auto;
-	margin: 16px 0;
- }
-input:checked + .lk__box .lk__box-title {
-	border-bottom: 1px solid rgba(0,0,0,.18);
-}
-input:checked + .lk__box .lk__box-content,
-input:checked + .lk__box .lk__box-close {
-	display: inline-block;
-}
-.lk__arrows section .lk__box-title {
-	padding-left: 44px;
-	width: calc(100% - 64px);
-}
-.lk__arrows section .lk__box-title:before {
-	position: absolute;
-	display: block;
-	content: '\203a';
-	font-size: 18pt;
-	left: 20px;
-	top: -2px;
-	transition: transform .15s ease-in-out;
-	color: rgba(0,0,0,.54);
-}
-input:checked + section.lk__box .lk__box-title:before {
-	transform: rotate(90deg);
-}
-}
+    .lk__box::before {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        pointer-events: none;
+        box-shadow: 0 1px 0 #e5e5e5, 0 0 3px rgba(0, 0, 0, .12), 0 0px 2px rgba(0, 0, 0, .24);
+    }
 
+    .lk__box-title {
+        width: calc(100% - 40px);
+        height: 64px;
+        line-height: 64px;
+        padding: 0 20px;
+        display: inline-block;
+        cursor: pointer;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .lk__box-content {
+        display: none;
+    }
+
+    .lk__pass-main,
+    .lk__timezone-main {
+        width: calc(85%);
+    }
+
+    .lk__box-close {
+        position: absolute;
+        height: 64px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        display: none;
+    }
+
+    input:checked+.lk__box {
+        height: auto;
+        margin: 16px 0;
+    }
+
+    input:checked+.lk__box .lk__box-title {
+        border-bottom: 1px solid rgba(0, 0, 0, .18);
+    }
+
+    input:checked+.lk__box .lk__box-content,
+    input:checked+.lk__box .lk__box-close {
+        display: inline-block;
+    }
+
+    .lk__arrows section .lk__box-title {
+        padding-left: 44px;
+        width: calc(100% - 64px);
+    }
+
+    .lk__arrows section .lk__box-title:before {
+        position: absolute;
+        display: block;
+        content: '\203a';
+        font-size: 18pt;
+        left: 20px;
+        top: -2px;
+        transition: transform .15s ease-in-out;
+        color: rgba(0, 0, 0, .54);
+    }
+
+    input:checked+section.lk__box .lk__box-title:before {
+        transform: rotate(90deg);
+    }
+}
 
 @media (max-width:350px) {
     .lk__box-title {
         font-size: 18px;
     }
 }
-
-
-
-
-
-
-
