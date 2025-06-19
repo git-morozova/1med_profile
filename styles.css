@@ -1036,3 +1036,107 @@ input[type=text]:-webkit-autofill:active {
         width: 100%;
     }
 }
+
+
+
+
+/* switcher for tabs */
+.switcher_container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto 0 auto;
+}
+.knobs,
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.switcher__button {
+  position: relative;
+    width: 300px;
+    height: 42px;
+  overflow: hidden;
+}
+
+.switcher__button,
+.switcher__button .layer {
+  border-radius: 100px;
+  border: 1px solid #3B7ABC;
+}
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knobs {
+  z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  background-color: #fff;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.switcher__button .knobs:before,
+.switcher__button .knobs:after,
+.switcher__button .knobs span {
+
+    position: absolute;
+    width: 150px;
+    height: 24px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 24px;
+    padding: 9px 4px;
+    border-radius: 100px;
+    transition: 0.3s ease all;
+}
+
+.switcher__button .knobs:before {
+  content: "";
+  left: 0px;
+  background-color: #3B7ABC;
+}
+
+.switcher__button .knobs:after {
+  content: "Избранное";
+  right: 0px;
+  color: #3B7ABC;
+}
+
+.switcher__button .knobs span {
+  display: inline-block;
+  left: 0px;
+  color: #fff;
+  z-index: 1;
+}
+
+.switcher__button .checkbox:checked + .knobs span {
+  color: #3B7ABC;
+}
+
+.switcher__button .checkbox:checked + .knobs:before {
+  left: 142px;
+  background-color: #3B7ABC;
+}
+
+.switcher__button .checkbox:checked + .knobs:after {
+  color: #fff;
+}
+
+.switcher__button .checkbox:checked ~ .layer {
+  background-color: #fff;
+}
