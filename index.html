@@ -10,9 +10,9 @@
 
 <body>
 
-
     <div class="main_container">
-        <div class="lk_container">
+
+        <nav class="lk_container lk__accordion lk__arrows">
             <div class="lk__main">
                 <div class="lk__main-title">
                     Личный кабинет
@@ -36,14 +36,14 @@
                             </div>
                         </div>
                         <!-- телефон верифицирован      
-                    <div class="lk__main-phone">
-                    <img src="https://devtest.1med.tv/local/templates/NEW_2019/svg/phone.svg">
-                    
-                    <div class="lk__main-phone-text">
-                        +7 (985) 186-33-76
-                        </div>
-                    </div>  
-             /телефон верифицирован -->
+                        <div class="lk__main-phone">
+                            <img src="https://devtest.1med.tv/local/templates/NEW_2019/svg/phone.svg">
+                            
+                            <div class="lk__main-phone-text">
+                                +7 (985) 186-33-76
+                            </div>
+                        </div>  
+                             /телефон верифицирован -->
                         <!-- телефон не верифицирован  -->
                         <div class="lk__main-phone">
                             <img src="https://devtest.1med.tv/local/templates/NEW_2019/svg/phone.svg">
@@ -75,11 +75,12 @@
                     </div>
                 </div>
             </div>
-            <div class="lk_container__socnet">
-                <div class="lk__socnet-title">
-                    Социальные сети
-                </div>
-                <div class="lk__socnet-main">
+
+            <input class="lk__accordion-input" type="radio" name="lk__accordion" id="cb1" />
+            <section class="lk__box lk_container__socnet">
+                <label class="lk__box-title lk__socnet-title" for="cb1">Социальные сети</label>
+                <label class="lk__box-close" for="acc-close"></label>
+                <div class="lk__box-content lk__socnet-main">
                     <div class="lk__socnet-text">
                         После привязки соцсетей или&nbsp;мессенджера к&nbsp;аккаунту Вы&nbsp;сможете входить
                         на&nbsp;сайт через выбранную социальную сеть или&nbsp;мессенджер.
@@ -102,12 +103,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="lk_container__profile">
-                <div class="lk__profile-title">
-                    Мои данные
-                </div>
-                <div class="lk__profile-main">
+            </section>
+            <input class="lk__accordion-input" type="radio" name="lk__accordion" id="cb2" />
+            <section class="lk__box lk_container__profile">
+                <label class="lk__box-title lk__profile-title" for="cb2">Мои данные</label>
+                <label class="lk__box-close" for="acc-close"></label>
+                <div class="lk__box-content lk__profile-main">
                     <div class="lk__profile-alert">
                         <img src="https://devtest.1med.tv/local/templates/NEW_2019/images/alert.png">
                         <div class="lk__profile-alert-text">
@@ -242,12 +243,12 @@
                         </button>
                     </div>
                 </div>
-            </div>
-            <div class="lk_container__pass">
-                <div class="lk__pass-title">
-                    Изменить пароль
-                </div>
-                <div class="lk__pass-main">
+            </section>
+            <input class="lk__accordion-input" type="radio" name="lk__accordion" id="cb3" />
+            <section class="lk__box lk_container__pass">
+                <label class="lk__box-title lk__pass-title" for="cb3">Изменить пароль</label>
+                <label class="lk__box-close" for="acc-close"></label>
+                <div class="lk__box-content lk__pass-main">
                     <div class="lk__pass-input lk__pass-block">
                         <div class="lk_bage">
                             Новый пароль (не&nbsp;менее 6&nbsp;символов)
@@ -261,7 +262,6 @@
                         <input class="lk__input" value="">
                     </div>
                     <div class="lk__pass-button-block">
-
                         <button class="lk__pass-button">
                             <span class="lk__pass-button-span">
                                 Сохранить
@@ -271,13 +271,12 @@
                             отменить
                         </button>
                     </div>
-                </div>
-            </div>
-            <div class="lk_container__timezone">
-                <div class="lk__timezone-title">
-                    Часовой пояс
-                </div>
-                <div class="lk__timezone-main">
+            </section>
+            <input class="lk__accordion-input" type="radio" name="lk__accordion" id="cb4" />
+            <section class="lk__box lk_container__timezone">
+                <label class="lk__box-title lk__timezone-title" for="cb4">Часовой пояс</label>
+                <label class="lk__box-close" for="acc-close"></label>
+                <div class="lk__box-content lk__timezone-main">
                     <div class="lk__timezone-input lk__timezone-block">
                         <div class="lk_bage">
                             Мы определили Ваше время так:
@@ -295,8 +294,10 @@
                         </label>
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
+
+            <input class="lk__accordion-input" type="radio" name="lk__accordion" id="acc-close" />
+        </nav>
 
         <div class="switcher_container">
             <div class="switcher__button">
@@ -308,6 +309,23 @@
             </div>
         </div>
     </div>
+
+    <script>
+        // прокрутка при клике на вкладку меню в моб. версии
+        const labels = document.querySelectorAll('.lk__box-title');
+        labels.forEach(label => {
+            label.addEventListener('click', () => {
+                const parentSection = label.closest('.lk__box');
+                setTimeout(() => {
+                    const position = parentSection.getBoundingClientRect().top + window.scrollY;
+                    window.scrollTo({
+                        top: position,
+                        behavior: 'smooth'
+                    });
+                }, 100);
+            });
+        });
+    </script>
 </body>
 
 </html>
