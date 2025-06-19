@@ -1250,5 +1250,22 @@ input:checked + section.lk__box .lk__box-title:before {
 
 
 
+@media (max-width:450px) {
+  
+.lk__timezone-main {
+    width: auto;
+
+}
+}
+
+
+@media (max-width:350px) {
+  
+.lk__pass-main {
+    width: auto;
+
+}
+}
+
 
 
