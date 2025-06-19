@@ -1206,7 +1206,7 @@ input[type=text]:-webkit-autofill:active {
 	display: none;
 }
 .lk__pass-main, .lk__timezone-main {
-    width: calc(100% - 80px);
+    width: calc(85%);
 
 }
 .lk__box-close {
@@ -1249,23 +1249,15 @@ input:checked + section.lk__box .lk__box-title:before {
 }
 
 
-
-@media (max-width:450px) {
-  
-.lk__timezone-main {
-    width: auto;
-
-}
-}
-
-
 @media (max-width:350px) {
-  
-.lk__pass-main {
-    width: auto;
+    .lk__box-title {
+        font-size: 18px;
+    }
+}
 
-}
-}
+
+
+
 
 
 
