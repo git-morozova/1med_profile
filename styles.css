@@ -72,6 +72,7 @@ body {
     padding: 0 0 10px 0;
     font-size: 24px;
     line-height: 28px;
+    display: block;
 }
 
 .lk__input {
@@ -1171,7 +1172,9 @@ input[type=text]:-webkit-autofill:active {
 	display: none;
 }
 @media (max-width:750px) {
-
+.lk__main-main, .lk__socnet-main, .lk__profile-main, .lk__pass-main, .lk__timezone-main {
+    border: #DCDCDC 0px solid;
+}
 .lk__box {
 	position: relative;
 	background: white;
@@ -1200,11 +1203,11 @@ input[type=text]:-webkit-autofill:active {
 	-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;
 }
 .lk__box-content {
-	width: calc(100% - 40px);
-	padding: 30px 20px;
-	font-size: 11pt;
-	color: rgba(0,0,0,.54);
 	display: none;
+}
+.lk__pass-main, .lk__timezone-main {
+    width: calc(100% - 80px);
+
 }
 .lk__box-close {
 	position: absolute;
