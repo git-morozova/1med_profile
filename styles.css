@@ -1180,7 +1180,11 @@ input[type=text]:-webkit-autofill:active {
     .lk__timezone-main {
         border: #DCDCDC 0px solid;
     }
-
+ .lk__main-main
+    {
+    box-shadow: 0 1px 0 #e5e5e5, 0 0 3px rgba(0, 0, 0, .12), 0 0px 2px rgba(0, 0, 0, .24);
+    
+    }
     .lk__box {
         position: relative;
         background: white;
